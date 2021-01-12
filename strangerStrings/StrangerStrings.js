@@ -1,35 +1,49 @@
 class StrangerStrings {
 
     getHelloWorld(){
-        return null;
+        return "Hello World";
     }
 
     concatenation(firstSegment, secondSegment){
-        return null;
+        return firstSegment + secondSegment ;
     }
 
     getPrefix(input){
-        return null;
+        return input.substr(0, 3);
     }
 
     getSuffix(input){
-        return null;
+        var n = input.length - 3;
+        return input.substr(n, 3);
     }
 
     getMiddleCharacter(input){
-        return null;
+        var position;
+        var length;
+
+        if(input.length % 2 == 1) {
+            position = input.length / 2;
+            length = 1;
+        } else {
+            position = input.length / 2 - 1;
+            length = 2;
+        }
+
+        return input.substring(position, position + length);
     }
 
     getFirstWord(input){
-        return null;
+        var n = input.split(" ");
+        return n[0];
     }
     
     getSecondWord(spaceDelimnatedInput){
-        return null;
+        var n = spaceDelimnatedInput.split(" ");
+        return n[1];
     }
     
     reverse(input){
-        return null;
+        return input.split("").reverse().join("");
     }
 }
 

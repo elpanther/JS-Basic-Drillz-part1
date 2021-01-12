@@ -1,4 +1,4 @@
-const { TestScheduler } = require('jest');
+//const { TestScheduler } = require('jest');
 const MathUtilities = require('./MathUtilities');
 
 test("Test 1 Integer Addition", () => {
@@ -74,7 +74,7 @@ test("Test 2 Integer Division", () => {
     let addedValue = 1;
 
     // When
-    let expected = 127;
+    let expected = 2;
     let actual = math.divide(baseValue, addedValue);
     //Then
     expect(actual).toEqual(expected);
